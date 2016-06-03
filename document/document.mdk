@@ -51,9 +51,11 @@ BigRLab具备以下特性：
 ![apis]
 ~
 
-[serving]: images/serving.png "serving" { width:auto; max-width:90% }
 [apis]: images/apis.png "apis" { width:auto; max-width:90% }
+[serving]: images/serving.png "serving" { width:auto; max-width:90% }
 [art]: images/art.png "art" { width:auto; max-width:90% }
+
+
 
 # BigRLab 功能模块
 目前BigRLab提供两大功能模块：
