@@ -20,8 +20,19 @@ In some of our earliest work to leverage AI and ML — such as delivering the mo
  came from quick experiments, feature engineering, and model tuning rather than applying 
  fundamentally different algorithms. —— Facebook
 ~
+# 目前行业痛点
+* 慢：建模慢、部署慢
+  - 目前大部分具备数据研究能力的企业建模和部署都很慢，往往一个模型完成开
+发和探索以及部署需要两周甚至更长的时间，因为需要多人配合、学习新模型
+也需要时间
+* 高：门槛高
+  - 对数据建模或数据科学的人员来说，需要具备：编程、数学、业务等
+多方面的知识和能力
+* 贵：人才贵
+  - 这两年由于数据的积累和大数据行业的爆发，导致具备可以独当一面的人员成
+本非常高，对于一个中小型企业，建立一个挖掘团队往往要支付高额成本
 
-# BigRLab特性说明     { #sec-intro }
+**为了有效解决上述问题，_BigRLab_因运而生。**# BigRLab特性说明     { #sec-intro }
 
 **BigRLab**是基于C/C++语言开发的高效机器学习服务平台，包含在线实时计算框架(BigRLab serving)和算法引擎(BigRLab Algorithm Engine)两个部分，提供文本分析、个性化推荐、统计建模等服务，
 BigRLab具备以下特性：
