@@ -32,7 +32,9 @@ In some of our earliest work to leverage AI and ML — such as delivering the mo
   - 这两年由于数据的积累和大数据行业的爆发，导致具备可以独当一面的人员成
 本非常高，对于一个中小型企业，建立一个挖掘团队往往要支付高额成本
 
-**为了有效解决上述问题，_BigRLab_因运而生。**# BigRLab特性说明     { #sec-intro }
+**为了有效解决上述问题，_BigRLab_因运而生。**
+
+# BigRLab特性说明     { #sec-intro }
 
 **BigRLab**是基于C/C++语言开发的高效机器学习服务平台，包含在线实时计算框架(BigRLab serving)和算法引擎(BigRLab Algorithm Engine)两个部分，提供文本分析、个性化推荐、统计建模等服务，
 BigRLab具备以下特性：
@@ -65,6 +67,17 @@ BigRLab具备以下特性：
 [apis]: images/apis.png "apis" { width:auto; max-width:90% }
 [serving]: images/serving.png "serving" { width:auto; max-width:90% }
 [art]: images/art.png "art" { width:auto; max-width:90% }
+
+~ Figure { #myfigure; \
+           caption: "BigRLab为用户训练不同模型." }
+![details_train]
+~
+~ Figure { #myfigure; \
+           caption: "BigRLab对动态请求实时响应." }
+![details_predict]
+~
+[details_train]: images/details_train.png "details_train" { width:auto; max-width:90% }
+[details_predict]: images/details_predict.png "details_predict" { width:auto; max-width:90% }
 
 
 
@@ -99,12 +112,6 @@ Algorithm Engine的集成，为模型和业务系统的耦合提供桥梁。
 ~
 
 
-Our contributions are:
-
-* A figure of a _butterfly_;
-* Some **mathematics**;
-* And some source code;
-* And references to Tex books [@Knuth:TeX;@Lamport:LaTeX;@Goo93;@Fberg04] and others [@Grandstrand]. 
 
 # 知识产权
 
