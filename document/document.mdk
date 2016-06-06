@@ -36,7 +36,7 @@ In some of our earliest work to leverage AI and ML — such as delivering the mo
 
 # BigRLab特性说明     { #sec-intro }
 
-**BigRLab**是基于C/C++语言开发的高效机器学习服务平台，包含在线实时计算框架(BigRLab serving)和算法引擎(BigRLab Algorithm Engine)两个部分，提供文本分析、个性化推荐、统计建模等服务，
+**BigRLab**是基于C++开发的一个高性能分布式实时处理挖掘、机器学习系统，特点是对迭代的并行计算处理能力强(这方面是hadoop的弱项)，包含在线实时计算框架(BigRLab serving)和算法引擎(BigRLab Algorithm Engine)两个部分，提供文本分析、个性化推荐、统计建模等服务，
 BigRLab具备以下特性：
 
 * 接口统一化 ：所有算法和业务的对外接口统一，形式上保持一致；
@@ -111,20 +111,33 @@ Algorithm Engine的集成，为模型和业务系统的耦合提供桥梁。
            caption: "BigRLab的抽象功能框架." }
 ![art]
 ~
-~
-
+# 与现有项目/软件对比
+| ---- | --------|------ | -----------|--------- | ------ |
+|    |     BigRLab       |   SAS  |  R |H2O|Spark Mlib|
++:----:+--{background-color:Silver}--+:-------+:-----+:-------+:-------:+
+| 开发语言|C++/C|SAS|R |  Java  |Scala|
+| 平台依赖  |   无依赖     |    仅开发环境   | 仅开发环境  |无依赖|Spark/hadoop|
+| 扩展性  | 任意扩展 | 封闭| 业务扩展差 |封闭|封闭|
+| 与生产环境耦合 | 无缝耦合| 差  | 差  |中|中|
+|是否提供SaaS服务|是|否|否|是|否|
+|------|----------------|------------|--------|------|--------|
+{ tbody-tr-odd-background-color:Gainsboro; \
+  tr-even-background-color:Floralwhite }
 
 # 知识产权
-
+~ align-left
 * 公开专利：
   - 一种非参数的话题自动标注的分布式系统和标注方法，公开号：CN104778254A
   - 一种基于指标预测的自动建模系统及其方法，公开号：CN103886203A
 * 审批中专利：
-  - 一种跨领域知识迁移的标签嵌入算法与系统
+  - 一种跨领域知识迁移的标签嵌入算法与系统[^tag]
 * 研发中专利：
   - 一种基于rpc的建模及特特征工程快速定制的方法与系统
-  - 一种基于循环神经网络(RNN)的特征抽取及内容自动推荐算法与系统
+  - 一种基于循环神经网络(RNN)的特征抽取及内容自动推荐算法与系统[^recom]
   - BigRLab自动化分布式实时训练引擎与预测系统[^fn]
-
+~
 # QA & Thanks!
+
+[^tag]:BigRLab自研标签自动标注算法.
+[^recom]:BigRLab自研推荐算法及系统框架.
 [^fn]: BigRLab的核心技术及理论细节.
